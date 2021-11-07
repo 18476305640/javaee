@@ -10,6 +10,7 @@
          version="3.1"
          metadata-complete="true">
 
+  <!--过滤器的配置-->
   <filter>
     <filter-name>CharacterEncodingFilter</filter-name>
     <filter-class>com.zjazn.javaweb5.filter.CharacterEncodingFilter</filter-class>
@@ -18,7 +19,7 @@
     <filter-name>CharacterEncodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
-
+  <!--监听器-->
   <listener>
     <listener-class>com.zjazn.javaweb5.listener.OnLineCountListener</listener-class>
   </listener>
@@ -26,6 +27,7 @@
     <session-timeout>1</session-timeout>
   </session-config>
 
+  <!--错误页面的配置，配置了404与500-->
   <error-page>
     <error-code>404</error-code>
     <location>/error/404.jsp</location>
@@ -47,11 +49,20 @@
   <!--_4_文件的下载与上传-->
   <servlet>
     <servlet-name>download</servlet-name>
-    <servlet-class>com.zjazn.javaweb5.servlet._4_文件的下载与上传</servlet-class>
+    <servlet-class>com.zjazn.javaweb5.servlet._4_文件的下载</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>download</servlet-name>
     <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>upload</servlet-name>
+    <servlet-class>com.zjazn.javaweb5.servlet._4_文件的上传</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>upload</servlet-name>
+    <url-pattern>/upload.do</url-pattern>
   </servlet-mapping>
 
   <!--_5_生成验证码-->

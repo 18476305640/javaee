@@ -13,7 +13,9 @@ import java.util.Date;
 import java.util.Timer;
 
 
-public class _4_文件的下载与上传 extends HttpServlet {
+
+
+public class _4_文件的下载 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         /**
@@ -61,3 +63,4 @@ public class _4_文件的下载与上传 extends HttpServlet {
         doGet(req, resp);
     }
 }
+

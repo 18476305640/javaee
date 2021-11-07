@@ -1,0 +1,11 @@
+digraph "com.zjazn:javaweb5:war:1.0-SNAPSHOT" { 
+	"com.zjazn:javaweb5:war:1.0-SNAPSHOT" -> "junit:junit:jar:4.11:test" ; 
+	"com.zjazn:javaweb5:war:1.0-SNAPSHOT" -> "javax.servlet:javax.servlet-api:jar:4.0.1:compile" ; 
+	"com.zjazn:javaweb5:war:1.0-SNAPSHOT" -> "javax.servlet.jsp:javax.servlet.jsp-api:jar:2.3.3:compile" ; 
+	"com.zjazn:javaweb5:war:1.0-SNAPSHOT" -> "javax.servlet.jsp.jstl:jstl-api:jar:1.2:compile" ; 
+	"com.zjazn:javaweb5:war:1.0-SNAPSHOT" -> "taglibs:standard:jar:1.1.2:compile" ; 
+	"com.zjazn:javaweb5:war:1.0-SNAPSHOT" -> "mysql:mysql-connector-java:jar:5.1.47:compile" ; 
+	"junit:junit:jar:4.11:test" -> "org.hamcrest:hamcrest-core:jar:1.3:test" ; 
+	"javax.servlet.jsp.jstl:jstl-api:jar:1.2:compile" -> "javax.servlet:servlet-api:jar:2.5:compile" ; 
+	"javax.servlet.jsp.jstl:jstl-api:jar:1.2:compile" -> "javax.servlet.jsp:jsp-api:jar:2.1:compile" ; 
+ } 
